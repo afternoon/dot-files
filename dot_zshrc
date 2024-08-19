@@ -1,0 +1,12 @@
+autoload -Uz compinit
+compinit
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+PS1="
+▶ %F{81}%U%~%u%f %F{8}$%f "
+
+export PATH="$PATH:/Users/ben/.local/bin"
+
+alias vi="/usr/local/bin/nvim"
+alias ls="ls -F --color"

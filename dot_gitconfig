@@ -1,0 +1,46 @@
+[user]
+  name = Ben Godfrey
+  email = ben@ben2.com
+
+[core]
+    excludesfile = ~/.gitignore
+    quotepath = false
+    editor = /usr/local/bin/nvim
+
+[pretty]
+    dense = %C(yellow)%h%Creset%Cred%d%Creset %Cblue%an%Creset %s %Cgreen(%cr)%Creset
+
+[color]
+    diff = true
+    status = true
+    branch = true
+
+[alias]
+    br = branch
+    bra = branch --all
+    ci = commit
+    cl = clone
+    co = checkout
+    d = diff
+    dc = diff --cached
+    l = log --graph --oneline --pretty=dense
+    l1 = log -1 --oneline --pretty=dense
+    la = log --graph --oneline --pretty=dense --all
+    pr = pull --rebase
+    rh = reset --hard
+    st = status --short --ignore-submodules
+    sta = stash
+    stat = status
+
+[difftool]
+    prompt = false
+
+[push]
+    default = simple
+
+[tig "bind"]
+    main = s view-status
+    generic = S !git sync
+    generic = U !git up
+[init]
+	defaultBranch = main
