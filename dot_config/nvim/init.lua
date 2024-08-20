@@ -231,6 +231,7 @@ require("lazy").setup({
     -- completion + snippets
     {
       "hrsh7th/nvim-cmp",
+      event = 'InsertEnter',
       dependencies = {
         { 'L3MON4D3/LuaSnip', version = "v2.*" },
         { 'rafamadriz/friendly-snippets' },
