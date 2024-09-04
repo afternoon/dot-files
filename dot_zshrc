@@ -1,6 +1,11 @@
 autoload -Uz compinit
 compinit
 
+HOMEBREW_BIN_PATH=`which -a brew`
+HOMEBREW_BIN_DIR=`dirname $HOMEBREW_BIN_PATH`
+HOMEBREW_BIN_PREFIX=`dirname $HOMEBREW_BIN_DIR`
+export HOMEBREW_PREFIX=${HOMEBREW_PREFIX:-$HOMEBREW_BIN_PREFIX}
+
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 PS1="
